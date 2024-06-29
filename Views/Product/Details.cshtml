@@ -1,0 +1,21 @@
+@model ECommerceApp.Models.Product
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Product Details</title>
+</head>
+
+<body>
+    <div class="product-details">
+        <h1>@Model.Name</h1>
+        <p>@Model.Description</p>
+        <p class="price">Price: @Model.Price</p>
+        <img src="@Model.ImageUrl" alt="@Model.Name" />
+        <p><a href="/Cart/AddToCart/@Model.Id">Add to Cart</a></p>
+        <p><a href="/Product/Index">Back to List</a></p>
+    </div>
+</body>
+
+</html>
